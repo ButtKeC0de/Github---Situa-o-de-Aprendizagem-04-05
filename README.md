@@ -1,2 +1,2 @@
-# Github---SA-
+# Github---SA
 Situação de aprendizagem
