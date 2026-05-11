@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Glacial Indifference';
-    src: url('Assets/Font_.otf'); 
+    src: url('Assets/Font_.otf');
 }
 
 Logo_1 {
@@ -18,8 +18,8 @@ Logo_1 {
 
 .black_conteiner {
     padding: 10px;
-    padding left:30px;
-    background-color:black;
+    padding left: 30px;
+    background-color: black;
     color: white;
     width: 160px;
 
@@ -63,8 +63,197 @@ video {
 }
 
 .changa-one-regular-italic {
-  font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_login {
+    width: 600px;
+    height: 700px;
+    background-color: rgb(255, 153, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+
+
+}
+
+.login {
+    text-align: center;
+    margin: auto;
+    font-size: 60px;
+    margin-top: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#form {
+    display: flex;
+}
+
+.video_inicial {
+    display: block;
+    margin: 0px;
+
+}
+
+.form_text {
+    width: 550px;
+    height: 70px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    font-family: ;
+}
+
+#button_login {
+    width: 240px;
+    height: 70px;
+    border-radius: 30px;
+    align-items: center;
+     margin: auto;
+     border: none;
+    outline: none;
+    display: block;
+    
+
+}
+
+.label_login {
+    font-size: 30px;
+     margin-left: 20px;
+}
