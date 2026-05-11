@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Glacial Indifference';
-    src: url('Assets/Font_.otf'); 
+    src: url('Assets/Font_.otf');
 }
 
 Logo_1 {
@@ -18,12 +18,12 @@ Logo_1 {
 
 .black_conteiner {
     padding: 10px;
-    padding left:30px;
-    background-color:black;
+    background-color: black;
     color: white;
     width: 160px;
 
 }
+
 
 .navbar-brand {
 
@@ -32,7 +32,7 @@ Logo_1 {
     white-space: nowrap;
     display: flex;
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif font-weight:bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
 body {
@@ -63,8 +63,233 @@ video {
 }
 
 .changa-one-regular-italic {
-  font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_login {
+    width: 600px;
+    height: 700px;
+    background-color: rgb(255, 153, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+
+
+}
+
+.login {
+    text-align: center;
+    margin: auto;
+    font-size: 60px;
+    margin-top: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+<<<<<<< HEAD
+#form {
+    display: flex;
+}
+
+.video_inicial {
+    display: block;
+    margin: 0px;
+
+}
+
+.form_text {
+    width: 550px;
+    height: 70px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+
+#button_login {
+    width: 240px;
+    height: 70px;
+    border-radius: 30px;
+    align-items: center;
+     margin: auto;
+     border: none;
+    outline: none;
+    display: block;
+    
+
+}
+
+.label_login {
+    font-size: 30px;
+     margin-left: 20px;
+=======
+.botao_entrar:hover {
+
+    transform: scale(1.1);
+    cursor: pointer;
+
+} 
+ body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.video-container {
+    width: 100%;
+    height: 80vh; 
+    overflow: hidden;
+    position: relative;
+}
+
+#video_inicial {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.conteudo-cards {
+    background-color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Arial Black', sans-serif; 
+>>>>>>> fcf5c8692a2400d4cb6a89343aa620c2a9a76c99
+}
