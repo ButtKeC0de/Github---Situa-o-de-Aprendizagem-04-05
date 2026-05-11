@@ -18,10 +18,15 @@ Logo_1 {
 
 .black_conteiner {
     padding: 10px;
-    padding left: 30px;
     background-color: black;
     color: white;
     width: 160px;
+
+}
+
+#butao2 {
+
+    border-radius: 20px 20px 20px 20px;
 
 }
 
@@ -32,7 +37,7 @@ Logo_1 {
     white-space: nowrap;
     display: flex;
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif font-weight:bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
 body {
@@ -237,7 +242,6 @@ video {
     margin-left: 20px;
     border: none;
     outline: none;
-    font-family: ;
 }
 
 #button_login {
