@@ -1,11 +1,6 @@
 @font-face {
     font-family: 'Glacial Indifference';
-<<<<<<< HEAD
     src: url('Assets/Font_.otf'); 
-=======
-    src: url('Assets/Font_.otf');
-   
->>>>>>> c2fdebf30cede023cdd7cb95e5e5078669f94755
 }
 
 Logo_1 {
@@ -23,13 +18,8 @@ Logo_1 {
 
 .black_conteiner {
     padding: 10px;
-<<<<<<< HEAD
     padding left:30px;
     background-color:black;
-=======
-    padding left:30px ;
-    background-color : black;
->>>>>>> c2fdebf30cede023cdd7cb95e5e5078669f94755
     color: white;
     width: 160px;
 
@@ -73,15 +63,8 @@ video {
 }
 
 .changa-one-regular-italic {
-<<<<<<< HEAD
   font-family: "Changa One", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
-=======
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
->>>>>>> c2fdebf30cede023cdd7cb95e5e5078669f94755
