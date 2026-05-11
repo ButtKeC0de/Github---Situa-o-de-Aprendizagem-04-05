@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Glacial Indifference';
-    src: url('Assets/Font_.otf'); /* Remova o format temporariamente para testar */
+    src: url('Assets/Font_.otf'); 
 }
 
 Logo_1 {
@@ -19,7 +19,7 @@ Logo_1 {
 .black_conteiner{
     padding: 10px;
     padding left:30px;
-    background-color:black ;
+    background-color:black;
     color: white;
     width: 160px;
 
@@ -69,3 +69,4 @@ video{
   font-weight: 400;
   font-style: italic;
 }
+
