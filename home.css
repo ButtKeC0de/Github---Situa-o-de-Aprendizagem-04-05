@@ -1,15 +1,27 @@
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-barra{
+
+barra {
   justify-content: flex-start;
 }
-trens{
-    justify-content: center;
-    text-align: center;
+
+#trens {
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(50, 56, 73);
+  color: white;
+  border-radius: 20%;
+  
 }
-.principal{
-background-color: rgb(248, 161, 61);
-padding: 30;
-display: flex;
+
+.principal {
+  background-color: rgb(248, 161, 61);
+  padding: 30;
+  display: flex;
+  height: 945px;
+}
+main{
+  display: flex;
+
 }
