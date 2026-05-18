@@ -32,7 +32,7 @@ Logo_1 {
     white-space: nowrap;
     display: flex;
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -199,13 +199,14 @@ video {
 
 .container_login {
     width: 600px;
-    height: 700px;
+    height: 600px;
     background-color: rgb(255, 153, 0);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 
 }
@@ -215,11 +216,10 @@ video {
     margin: auto;
     font-size: 60px;
     margin-top: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 
 }
 
-<<<<<<< HEAD
 #form {
     display: flex;
 }
@@ -227,13 +227,12 @@ video {
 .video_inicial {
     display: block;
     margin: 0px;
-
 }
 
 .form_text {
     width: 550px;
     height: 70px;
-    border-radius: 30px;
+    border-radius: 5px;
     margin-bottom: 20px;
     margin-left: 20px;
     border: none;
@@ -241,55 +240,47 @@ video {
 }
 
 #button_login {
-    width: 240px;
-    height: 70px;
+    width: 250px;
+    height: 50px;
     border-radius: 30px;
     align-items: center;
-     margin: auto;
-     border: none;
+    margin: auto;
+    border: none;
     outline: none;
     display: block;
-    
-
-}
-
-.label_login {
     font-size: 30px;
-     margin-left: 20px;
-=======
-.botao_entrar:hover {
-
-    transform: scale(1.1);
-    cursor: pointer;
-
-} 
- body, html {
-    margin: 0;
-    padding: 0;
 }
-
-.video-container {
-    width: 100%;
-    height: 80vh; 
-    overflow: hidden;
-    position: relative;
-}
-
-#video_inicial {
+#login_1{
+    display:flex;
+    margin: auto;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+}
+.label_login {
+    font-size: 32px;
+    margin-left: 20px;
 }
 
-.conteudo-cards {
-    background-color: #ffffff;
-    padding-top: 50px;
-    padding-bottom: 50px;
+#text_log {
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
 }
 
+.logo_login {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
 
-h2 {
-    font-size: 3rem;
-    font-family: 'Arial Black', sans-serif; 
->>>>>>> fcf5c8692a2400d4cb6a89343aa620c2a9a76c99
+.checkbox_login {
+   font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
 }

@@ -16,7 +16,7 @@
             <video class="video_inicial" src="Assets/video.login.mp4" class="object-fit-scale" autoplay loop muted
                 playsinline></video>
             <div class="container_login">
-                <p class="login">Login</p>
+                <img src="Assets/logo_3.png" alt="logo" class="logo_login">
                 <div id="form">
                     <form action="">
                         <label class="label_login" for="">Email</label>
@@ -25,7 +25,16 @@
                         <label class="label_login" for="">Senha</label>
                         <input class="form_text" type="text" placeholder="senha">
                         <br>
-                        <p >Não tem conta? clique para cadastrar</p>
+                        
+                        <div class="login_1">
+                        <label class="checkbox_login" for="termos">
+                            <input class="checkbox_login" type="checkbox" name="termos" required>
+                            <a href="/termos-de-uso" target="_blank">Termos de Uso</a>
+                        </label>
+                        <p id="text_log">Clique para cadastrar</p>
+                        </div>
+
+
                         <br>
                         <button id="button_login" onclick="entrar">Entrar</button>
                     </form>
