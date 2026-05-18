@@ -7,11 +7,14 @@ barra {
 }
 
 #trens {
-  justify-content: center;
+  justify-content:space-around;
   text-align: center;
   background-color: rgb(50, 56, 73);
   color: white;
-  border-radius: 20%;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   
 }
 
@@ -24,4 +27,14 @@ barra {
 main{
   display: flex;
 
+}
+.id{
+  display: block;
+  flex-direction: column;
+  text-align: center;
+}
+.nome{
+  display: block;
+  flex-direction: column;
+  text-align: center;
 }
