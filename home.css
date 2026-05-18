@@ -1,0 +1,40 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+barra {
+  justify-content: flex-start;
+}
+
+#trens {
+  justify-content:space-around;
+  text-align: center;
+  background-color: rgb(50, 56, 73);
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+.principal {
+  background-color: rgb(248, 161, 61);
+  padding: 30;
+  display: flex;
+  height: 945px;
+}
+main{
+  display: flex;
+
+}
+.id{
+  display: block;
+  flex-direction: column;
+  text-align: center;
+}
+.nome{
+  display: block;
+  flex-direction: column;
+  text-align: center;
+}

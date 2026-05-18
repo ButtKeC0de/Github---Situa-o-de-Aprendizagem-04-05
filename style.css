@@ -3,11 +3,7 @@
     src: url('Assets/Font_.otf');
 }
 
-Logo_1 {
-    width: 50px;
-    height: 50px;
-    image-rendering: optimizeQuality;
-}
+
 
 .bg_yelllow {
 
@@ -38,6 +34,7 @@ Logo_1 {
 body {
     margin: 0;
     padding: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
 video {
@@ -66,8 +63,32 @@ video {
     font-family: "Changa One", sans-serif;
     font-weight: 400;
     font-style: italic;
+} 
+
+.botao_entrar{
+    height: 60px;
+
+
 }
 
+.Railview{
+
+    color: rgb(0, 0, 0);
+
+}
+
+.card {
+    background-color:rgb(248, 164, 62);
+
+}
+
+.mid-btt{
+
+
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
 
 
 
@@ -249,6 +270,7 @@ video {
     outline: none;
     display: block;
     font-size: 30px;
+<<<<<<< HEAD
 }
 #login_1{
     display:flex;
@@ -283,4 +305,7 @@ video {
     cursor: pointer;
     text-align: center;
     margin: auto;
+=======
+     margin-left: 20px;
+>>>>>>> 5a64c7eb16fa5af980fa6bbe5e9b918a0c87f531
 }
