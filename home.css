@@ -1,3 +1,11 @@
+*{
+
+  margin: 0;
+  padding: 0;
+}
+
+
+
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-image : url(Assets/Projeto-\ SA\ \(1\).jpg);
@@ -31,9 +39,13 @@ barra {
 }
 main{
   display: flex;
+  
 
 
 }
 #centro{
-  justify-content:space-between;
+  justify-content:center;
+}
+.principal-menu{
+  margin-right: 10%;
 }
