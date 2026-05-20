@@ -28,5 +28,5 @@ document.getElementById('formCadastro').addEventListener('submit', function(even
 });
 
 document.getElementById('text_log').addEventListener('click', function() {
-    window.location.href = "index.html";
+    window.location.href = "login.html";
 });
