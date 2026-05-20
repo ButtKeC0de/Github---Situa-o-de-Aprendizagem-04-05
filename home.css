@@ -15,7 +15,8 @@ barra {
   background-color: rgb(50, 56, 73);
   color: white;
   border-radius: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
   flex-wrap: wrap;
   gap: 20px;
   
