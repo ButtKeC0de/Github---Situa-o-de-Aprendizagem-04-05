@@ -31,4 +31,8 @@ barra {
 main{
   display: flex;
 
+
+}
+#centro{
+  justify-content:space-between;
 }
