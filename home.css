@@ -7,7 +7,7 @@ barra {
 }
 
 #trens {
-  justify-content:space-around;
+  justify-content:center;
   text-align: center;
   background-color: rgb(50, 56, 73);
   color: white;
