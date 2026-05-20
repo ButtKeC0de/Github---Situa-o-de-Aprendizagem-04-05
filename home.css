@@ -28,13 +28,3 @@ main{
   display: flex;
 
 }
-.id{
-  display: block;
-  flex-direction: column;
-  text-align: center;
-}
-.nome{
-  display: block;
-  flex-direction: column;
-  text-align: center;
-}
