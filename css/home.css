@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-image: url(Assets/Projeto-\ SA\ \(1\).jpg);
+  background-image: url(../Assets/Images/Projeto-\ SA\ \(1\).jpg);
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
@@ -37,16 +37,10 @@ barra {
 
 .principal {
   background-color: rgb(248, 161, 61);
-<<<<<<< HEAD:css/home.css
-  padding: 30px;
-  height: 890px;
-  margin: 0px;
-=======
   padding: 30;
   display: flex;
   height: 945px;
 
->>>>>>> ba90169403418a327cbf5f1a9906942784b4bdf8:home.css
 }
 
 main {
@@ -68,110 +62,11 @@ main {
   width: 80%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #principal_rota_inicial{
   width: 200px;
   height: 200px;
   background-color: rgb(248, 161, 61);
-  display: ;
+  display: flex;
   border-radius: 20px;
 }
 
