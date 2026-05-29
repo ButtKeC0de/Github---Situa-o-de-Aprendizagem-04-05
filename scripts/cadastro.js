@@ -4,6 +4,17 @@ document.getElementById('formCadastro').addEventListener('submit', function(even
     const email = document.getElementById('emailCadastro').value.trim();
     const senha = document.getElementById('senhaCadastro').value;
     const confirmaSenha = document.getElementById('confirmaSenha').value;
+    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailValido.test(email)) {
+        alert("Digite um email válido!");
+        return;
+    }
+
+    if (senha.length < 6) {
+        alert("A senha deve ter no mínimo 6 caracteres!");
+        return;
+    }
 
     if (senha !== confirmaSenha) {
         alert("As senhas não coincidem!");
@@ -24,9 +35,9 @@ document.getElementById('formCadastro').addEventListener('submit', function(even
     localStorage.setItem('usuarios', JSON.stringify(usuariosCadastrados));
 
     alert("Cadastro realizado com sucesso!");
-    window.location.href = "index.html";
+    window.location.href = "../public/login.html";
 });
 
 document.getElementById('text_log').addEventListener('click', function() {
-    window.location.href = "login.html";
+    window.location.href = "../public/login.html";
 });
