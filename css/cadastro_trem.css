@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    font-family:'Poppins',sans-serif;
+    background:#dfe3e8;
+}
+
+.app-container{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:90px;
+    background:#F2A03A;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 0;
+}
+
+.logo-area img{
+    width:55px;
+}
+
+.menu-icons{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-bottom:10px;
+}
+
+.icon-btn{
+    width:50px;
+    height:50px;
+    border:1px solid #000;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.icon-btn img{
+    width:28px;
+    height:28px;
+    object-fit:contain;
+}
+
+.content{
+    flex:1;
+    padding:50px;
+    background:#dfe3e8;
+}
+
+.painel-cadastro{
+    background:#F2A03A;
+    border-radius:35px;
+    padding:40px;
+    max-width:1150px;
+    margin:auto;
+}
+
+.titulo{
+    font-size:3rem;
+    font-weight:400;
+    margin-bottom:30px;
+}
+
+.card-input{
+    background:#31384A;
+    border-radius:28px;
+    height:140px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.card-input label{
+    color:#fff;
+    font-size:1.4rem;
+    margin-bottom:15px;
+}
+
+.card-input input{
+    width:90%;
+    height:50px;
+    border:none;
+    border-radius:50px;
+    background:#F2A03A;
+    text-align:center;
+    outline:none;
+}
+
+.botao-container{
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.btn-enviar{
+    width:240px;
+    height:130px;
+    border:none;
+    border-radius:30px;
+    background:#31384A;
+    color:#fff;
+    font-size:3rem;
+    font-weight:300;
+}
