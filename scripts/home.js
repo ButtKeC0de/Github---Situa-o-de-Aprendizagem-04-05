@@ -6,7 +6,7 @@ trens.forEach(trem =>{
 
  const id = trem.dataset.id;
 
-    window.location.href ='detalhes.html?id=${id}';
+   window.location.href = `detalhes.html?id=${id}`;
     });
 
 });
