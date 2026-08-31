@@ -22,6 +22,7 @@ CREATE TABLE Trem (
     apelido VARCHAR(100) NOT NULL,
     tipo_trem VARCHAR(50) NOT NULL,
     empresa_operadora VARCHAR(150),
+    modelo VARCHAR(100) NOT NULL,
     numero_vagoes INT NOT NULL
 );
 
