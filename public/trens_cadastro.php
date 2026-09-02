@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Importa o arquivo de conexão existente em infra/conexao.php
 require_once '../infra/conexao.php'; 
 
 $mensagem = "";
@@ -15,14 +14,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!empty($modelo) && !empty($apelido) && !empty($tipo) && !empty($vagoes)) {
         
-        // SQL preparado com MySQLi usando $conexao
         $sql = "INSERT INTO Trem (modelo, apelido, tipo_trem, empresa_operadora, numero_vagoes) 
                 VALUES (?, ?, ?, ?, ?)";
         
         $stmt = $conexao->prepare($sql);
 
         if ($stmt) {
-            // 'ssssi' indica os tipos dos parâmetros: 4 Strings (s) e 1 Integer (i)
             $stmt->bind_param("ssssi", $modelo, $apelido, $tipo, $operadora, $vagoes);
 
             if ($stmt->execute()) {
@@ -65,7 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="app-container">
 
-        <!-- Barra Lateral Esquerda -->
         <aside class="principal">
             <div>
                 <div>
@@ -100,7 +96,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </aside>
 
-        <!-- Conteúdo Principal Centralizado -->
         <main class="content">
 
             <section class="painel-cadastro">

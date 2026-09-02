@@ -1,10 +1,8 @@
 <?php
 session_start();
 
-// Importa a conexão do MySQLi ($conexao)
 require_once '../infra/conexao.php';
 
-// Captura e valida o ID recebido pela URL
 $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 $mensagem = "";
 
@@ -14,7 +12,6 @@ if (!$id) {
     exit();
 }
 
-// Processa a atualização via formulário POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $modelo    = $_POST['modelo'] ?? '';
     $apelido   = $_POST['apelido'] ?? '';
@@ -24,7 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!empty($modelo) && !empty($apelido) && !empty($tipo) && !empty($vagoes)) {
         
-        // SQL de UPDATE
         $sql_update = "UPDATE Trem 
                        SET modelo = ?, apelido = ?, tipo_trem = ?, empresa_operadora = ?, numero_vagoes = ? 
                        WHERE id_trem = ?";
@@ -32,7 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt_update = $conexao->prepare($sql_update);
 
         if ($stmt_update) {
-            // "ssssii" -> 4 strings, 2 números inteiros (vagoes e id_trem)
             $stmt_update->bind_param("ssssii", $modelo, $apelido, $tipo, $operadora, $vagoes, $id);
 
             if ($stmt_update->execute()) {
@@ -55,7 +50,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-// Busca os dados do trem atual no banco de dados para preencher o formulário
 $sql_select = "SELECT id_trem, modelo, apelido, empresa_operadora AS operadora, tipo_trem AS tipo, numero_vagoes AS vagoes FROM Trem WHERE id_trem = ?";
 $stmt_select = $conexao->prepare($sql_select);
 $stmt_select->bind_param("i", $id);
@@ -89,7 +83,6 @@ $stmt_select->close();
 
     <div class="app-container">
 
-        <!-- Barra Lateral Esquerda -->
         <aside class="principal">
             <div>
                 <div>
@@ -124,7 +117,6 @@ $stmt_select->close();
             </div>
         </aside>
 
-        <!-- Conteúdo Principal Centralizado -->
         <main class="content">
 
             <section class="painel-cadastro">
