@@ -1,12 +1,10 @@
 <?php
 session_start();
 
-// Importa a conexão do MySQLi ($conexao)
 require_once '../infra/conexao.php';
 
 $trens = [];
 
-// Consulta SQL para buscar os dados cadastrados na tabela Trem
 $sql = "SELECT id_trem, modelo, apelido, empresa_operadora, tipo_trem, numero_vagoes FROM Trem ORDER BY id_trem DESC";
 $resultado = $conexao->query($sql);
 
@@ -26,7 +24,6 @@ if ($resultado && $resultado->num_rows > 0) {
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Ícones do Bootstrap para as ações de Editar e Excluir -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
     <link rel="stylesheet" href="../assets/css/cadastro_trem.css">
@@ -37,7 +34,6 @@ if ($resultado && $resultado->num_rows > 0) {
 
     <div class="app-container">
 
-        <!-- Barra Lateral Esquerda -->
         <aside class="principal">
             <div>
                 <div>
@@ -72,7 +68,6 @@ if ($resultado && $resultado->num_rows > 0) {
             </div>
         </aside>
 
-        <!-- Conteúdo Principal Centralizado -->
         <main class="content">
 
             <section class="painel-cadastro">
@@ -84,7 +79,6 @@ if ($resultado && $resultado->num_rows > 0) {
                     </a>
                 </div>
 
-                <!-- Exibe mensagem vinda da sessão (ex: mensagem de cadastro/edição/exclusão) -->
                 <?php 
                 if (isset($_SESSION['mensagem'])) {
                     echo $_SESSION['mensagem'];
@@ -92,7 +86,6 @@ if ($resultado && $resultado->num_rows > 0) {
                 }
                 ?>
 
-                <!-- Tabela de Listagem de Trens -->
                 <div class="table-responsive rounded-4 shadow-sm">
                     <table class="table table-hover align-middle m-0 text-center custom-table">
                         <thead>
@@ -115,12 +108,10 @@ if ($resultado && $resultado->num_rows > 0) {
                                         <td><span class="badge bg-secondary"><?= htmlspecialchars($trem['tipo_trem']) ?></span></td>
                                         <td><?= htmlspecialchars($trem['numero_vagoes']) ?></td>
                                         <td>
-                                            <!-- Botão Editar (Redireciona passando o id_trem) -->
                                             <a href="trens_editar.php?id=<?= $trem['id_trem'] ?>" class="btn btn-warning btn-sm text-white me-1 rounded-3" title="Editar">
                                                 <i class="bi bi-pencil-fill"></i>
                                             </a>
                                             
-                                            <!-- Botão Excluir (Redireciona passando o id_trem) -->
                                             <a href="trens_excluir.php?id=<?= $trem['id_trem'] ?>" class="btn btn-danger btn-sm rounded-3" onclick="return confirm('Tem certeza que deseja excluir este trem?');" title="Excluir">
                                                 <i class="bi bi-trash-fill"></i>
                                             </a>
