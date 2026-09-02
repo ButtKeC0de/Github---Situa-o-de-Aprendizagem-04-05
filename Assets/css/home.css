@@ -1,32 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-image: url(../Assets/Images/tela_de_fundo_home.jpg);
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../Images/tela_de_fundo_home.jpg);
   background-size: cover;
   background-attachment: fixed;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
 }
 
-barra {
-  justify-content: flex-start;
-}
 
-#trens {
-  justify-content: center;
-  text-align: center;
-  background-color: rgb(50, 56, 73);
-  color: white;
-  border-radius: 20px;
-  display: grid;
-  grid-template-columns: repeat(6, 2fr);
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 0 auto;
+.tela {
+  display: flex;
+  min-height: 100vh;
 }
 
 .principal {
@@ -34,8 +23,8 @@ barra {
   padding: 30px 15px;
   display: flex;
   flex-direction: column;
-  height: 100%;
   width: 120px;
+  flex-shrink: 0;
 }
 
 .principal > div {
@@ -44,31 +33,6 @@ barra {
   justify-content: space-between;
   height: 100%;
   align-items: center;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  width: 200%;
-  bottom: 20px;
-}
-
-#centro {
-  justify-content: center;
-}
-
-.principal-menu {
-  margin-right: 10%;
-  justify-content: center;
-  width: 80%;
-}
-
-#principal_rota_inicial {
-  width: 200px;
-  height: 200px;
-  background-color: rgb(248, 161, 61);
-  display: flex;
-  border-radius: 20px;
 }
 
 .logos {
@@ -83,29 +47,160 @@ main {
   margin-bottom: 20px;
 }
 
-#cadastrar_trem{
+.conteudo {
+  flex: 1;
+  padding: 20px 40px;
+  min-width: 0;
+}
+
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.titulo_home {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.foto_usuario {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nome_usuario {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+}
+
+
+.busca {
+  background-color: rgb(65, 72, 89);
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 420px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.busca i {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.busca input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 18px;
+  width: 100%;
+}
+
+.busca input::placeholder {
+  color: #b0b4bd;
+}
+
+
+#trens {
   background-color: rgb(50, 56, 73);
-  width: 300px;
-  height: 380px;
-  border-radius: 15px;
-  margin-right: 50px;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 22px 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
-#editar_trem{
- background-color: rgb(50, 56, 73);
-  width: 300px;
-  height: 380px;
-  border-radius: 15px;
-  margin-left: 50px;
+.trem {
+  text-align: center;
+  cursor: pointer;
 }
 
-#excluir_trem{
-background-color: rgb(50, 56, 73);
-  width: 300px;
-  height: 380px;
-  border-radius: 15px;
+.trem img {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  margin-bottom: 8px;
 }
-.parte_baixo_home{
-display: flex;
-margin-top: 10px;
+
+.trem p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+
+.parte_baixo_home {
+  display: flex;
+  gap: 20px;
+}
+
+.card_acao {
+  background-color: rgb(50, 56, 73);
+  border-radius: 20px;
+  width: 250px;
+  height: 205px;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_acao h2 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.botao_laranja {
+  background-color: rgb(248, 161, 61);
+  color: #000000;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 40px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.botao_laranja:hover {
+  background-color: rgb(235, 145, 45);
+}
+
+.card_mapa {
+  flex: 1;
+  height: 205px;
+  border: 3px solid rgb(248, 161, 61);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card_mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
