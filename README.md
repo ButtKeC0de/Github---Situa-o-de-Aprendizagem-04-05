@@ -35,14 +35,3 @@ O projeto busca seguir boas práticas de programação, integração de sistemas
 - Relatórios de desempenho e manutenção
 - Detecção de falhas no sistema
   
-##  Equipe de Desenvolvimento
-
-- Beatriz Fröhlich
-- Caio Henrique Leite
-- Carlos Eduardo Buttke
-- Lucas Onofre Senczuck
-- Nordeley Medeiros Corradini
-
-##  Status do Projeto
- 
-Projeto em desenvolvimento.
